@@ -1,0 +1,99 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT */
+:root {
+  --bg-main: #0d0d0d;
+  --bg-secondary: #1a1a1a;
+  --accent-gold: #d6b36a;
+  --accent-red: #c0392b;
+  --text-primary: #f5e6c8;
+  --text-muted: #b8a98a;
+  --border-soft: rgba(214,179,106,0.2);
+}
+
+/* BODY */
+body {
+  font-family: 'Playfair Display', serif;
+  background: var(--bg-main);
+  color: var(--text-primary);
+  line-height: 1.7;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(6px);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.logo {
+  color: var(--accent-gold);
+  letter-spacing: 2px;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.nav-links a:hover {
+  color: var(--accent-gold);
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.highlight {
+  color: var(--accent-red);
+}
+
+/* SECTION */
+.section {
+  max-width: 900px;
+  margin: auto;
+  padding: 100px 20px;
+}
+
+/* CARDS */
+.card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-soft);
+  padding: 25px;
+  margin: 20px 0;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--accent-gold);
+  transform: translateY(-3px);
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
