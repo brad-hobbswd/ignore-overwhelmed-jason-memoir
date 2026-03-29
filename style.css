@@ -316,26 +316,114 @@ html {
 /* MOBILE (SAME LOOK, JUST SMALLER) */
 @media (max-width: 768px) {
 
-  .navbar {
-  width: 92%;
-  top: 10px;
-  padding: 8px 12px;
+ /* =====================
+   NAVBAR FINAL (CLEAN)
+===================== */
+
+.navbar {
+  position: fixed;
+  width: 90%;
+  max-width: 1000px;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(6px);
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  z-index: 1000;
 }
+
+/* NAV LINKS (ALL SCREENS) */
+.nav-links {
+  display: flex;
+  gap: 22px;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent-gold);
+  background: rgba(214,179,106,0.08);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+ /* =====================
+   NAVBAR FINAL (CLEAN)
+===================== */
+
+.navbar {
+  position: fixed;
+  width: 90%;
+  max-width: 1000px;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(6px);
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  z-index: 1000;
+}
+
+/* NAV LINKS (ALL SCREENS) */
+.nav-links {
+  display: flex;
+  gap: 22px;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent-gold);
+  background: rgba(214,179,106,0.08);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .navbar {
+    width: 92%;
+    top: 10px;
+    padding: 8px 12px;
+  }
 
   .logo {
     font-size: 0.8rem;
   }
 
   .nav-links {
-    gap: 10px;
+    gap: 14px;
   }
 
   .nav-links a {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
+    padding: 5px 8px;
   }
 
 }
-
 
 @media (min-width: 1024px) {
 
