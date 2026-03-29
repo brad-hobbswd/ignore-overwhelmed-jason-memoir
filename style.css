@@ -22,7 +22,7 @@ body {
   background: var(--bg-main);
   color: var(--text-primary);
   line-height: 1.7;
-  padding-top: 70px;
+  padding-top: 100px;
 }
 
 
@@ -295,46 +295,32 @@ html {
 
 .navbar {
   position: fixed;
-  width: 100%;
-  top: 0;
+  width: 90%;
+  max-width: 1000px;
+  top: 15px;              /* pulls it off the very top */
+  left: 50%;
+  transform: translateX(-50%);  /* centers it */
+
   background: rgba(0,0,0,0.85);
   backdrop-filter: blur(6px);
-  padding: 15px 20px;
+
+  padding: 10px 16px;     /* thinner */
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  border-radius: 12px;    /* gives it that clean contained look */
   z-index: 1000;
-}
-
-.logo {
-  color: var(--accent-gold);
-  letter-spacing: 2px;
-  font-size: 1rem;
-}
-
-.nav-links {
-  display: flex;
-  gap: 15px;
-}
-
-.nav-links a {
-  color: var(--text-muted);
-  text-decoration: none;
-  font-size: 0.85rem;
-  white-space: nowrap;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: var(--accent-gold);
 }
 
 /* MOBILE (SAME LOOK, JUST SMALLER) */
 @media (max-width: 768px) {
 
   .navbar {
-    padding: 10px 15px;
-  }
+  width: 92%;
+  top: 10px;
+  padding: 8px 12px;
+}
 
   .logo {
     font-size: 0.8rem;
