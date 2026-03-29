@@ -59,8 +59,8 @@ body {
 /* SECTION */
 .section {
   max-width: 900px;
-  margin: 20px auto 0;
-  padding: 80px 20px;
+  margin: 5px auto 0;
+  padding: 40px 20px 80px;
 }
 
 /* CARDS */
