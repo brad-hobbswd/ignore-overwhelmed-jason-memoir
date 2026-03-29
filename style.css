@@ -314,3 +314,14 @@ html {
   margin: 15px auto;
   box-shadow: 0 0 8px rgba(214,179,106,0.4);
 }
+
+/* COMING SOON BADGE */
+.coming-badge {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 8px 16px;
+  border: 1px solid var(--accent-red);
+  color: var(--accent-red);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
