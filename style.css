@@ -349,3 +349,24 @@ html {
   }
 
 }
+
+
+@media (min-width: 1024px) {
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .chapter-title {
+    margin-bottom: 110px;
+  }
+
+  .reading {
+    padding: 180px 20px 100px;
+  }
+
+  .section {
+    padding: 100px 20px;
+  }
+
+}
