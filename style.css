@@ -364,6 +364,10 @@ html {
    NAVBAR FINAL (CLEAN)
 ===================== */
 
+/* =====================
+   NAVBAR FINAL (CLEAN)
+===================== */
+
 .navbar {
   position: fixed;
   width: 90%;
@@ -379,6 +383,12 @@ html {
   align-items: center;
   border-radius: 12px;
   z-index: 1000;
+}
+
+.logo {
+  color: var(--accent-gold);
+  letter-spacing: 2px;
+  font-size: 1rem;
 }
 
 /* NAV LINKS (ALL SCREENS) */
@@ -421,26 +431,6 @@ html {
   .nav-links a {
     font-size: 0.8rem;
     padding: 5px 8px;
-  }
-
-}
-
-@media (min-width: 1024px) {
-
-  .hero h1 {
-    font-size: 3.5rem;
-  }
-
-  .chapter-title {
-    margin-bottom: 110px;
-  }
-
-  .reading {
-    padding: 180px 20px 100px;
-  }
-
-  .section {
-    padding: 100px 20px;
   }
 
 }
