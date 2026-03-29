@@ -326,5 +326,41 @@ html {
   letter-spacing: 1px;
 }
 
+/* STORE LAYOUT */
+.store-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
 
+/* FIXED BOOK IMAGE SIZE */
+.book-image img {
+  width: 220px;          /* smaller size */
+  max-width: 100%;
+  border-radius: 18px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 
+    0 15px 40px rgba(0,0,0,0.6),
+    0 0 10px rgba(214,179,106,0.2);
+}
+
+/* DETAILS */
+.book-details {
+  max-width: 400px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .store-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .book-image img {
+    width: 180px; /* smaller on phone */
+  }
+}
 
