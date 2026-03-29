@@ -171,18 +171,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* CHAPTER TITLE STYLE */
-
-
-
-
-/* MAIN TITLE */
-
-
-
-
-/* OPTIONAL FADE-IN */
-
 
 @keyframes fadeIn {
   to {
@@ -199,7 +187,7 @@ html {
 
 .chapter-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 70px; /* was 50px */
   line-height: 1.4;
   opacity: 0;
   transform: translateY(20px);
@@ -225,7 +213,10 @@ html {
   }
 }
 
-
+.reading p:first-of-type {
+  font-size: 1.15rem;
+  margin-top: 10px;
+}
 
 .reading {
   max-width: 720px;
