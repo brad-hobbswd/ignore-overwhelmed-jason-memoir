@@ -54,12 +54,12 @@ body {
 
 /* HERO */
 .hero {
-  height: 100vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
+  padding: 120px 20px 60px;
 }
 
 .hero h1 {
@@ -325,4 +325,6 @@ html {
   font-size: 0.9rem;
   letter-spacing: 1px;
 }
+
+
 
