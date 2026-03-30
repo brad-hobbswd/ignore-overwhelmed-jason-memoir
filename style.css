@@ -365,7 +365,7 @@ html {
 ===================== */
 
 /* =====================
-   NAVBAR FINAL (CLEAN)
+   NAVBAR (CLEAN FINAL)
 ===================== */
 
 .navbar {
@@ -377,7 +377,7 @@ html {
   transform: translateX(-50%);
   background: rgba(0,0,0,0.85);
   backdrop-filter: blur(6px);
-  padding: 10px 16px;
+  padding: 12px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -391,19 +391,22 @@ html {
   font-size: 1rem;
 }
 
-/* NAV LINKS (ALL SCREENS) */
+/* KEY FIX: better spacing */
 .nav-links {
   display: flex;
-  gap: 22px;
+  align-items: center;
+  gap: 28px; /* increased spacing */
 }
 
+/* KEY FIX: clickable breathing room */
 .nav-links a {
   color: var(--text-muted);
   text-decoration: none;
-  font-size: 0.9rem;
-  padding: 6px 10px;
+  font-size: 0.95rem;
+  padding: 8px 12px; /* more internal space */
   border-radius: 6px;
   transition: all 0.25s ease;
+  white-space: nowrap; /* prevents text wrapping into each other */
 }
 
 .nav-links a:hover {
@@ -417,7 +420,7 @@ html {
   .navbar {
     width: 92%;
     top: 10px;
-    padding: 8px 12px;
+    padding: 10px 14px;
   }
 
   .logo {
@@ -425,12 +428,16 @@ html {
   }
 
   .nav-links {
-    gap: 14px;
+    gap: 16px; /* slightly tighter but still separated */
   }
 
   .nav-links a {
     font-size: 0.8rem;
-    padding: 5px 8px;
+    padding: 6px 8px;
   }
+}
 
+.nav-links a:not(:last-child) {
+  border-right: 1px solid var(--border-soft);
+  padding-right: 16px;
 }
