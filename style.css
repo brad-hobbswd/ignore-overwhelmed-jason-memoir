@@ -290,81 +290,6 @@ html {
 }
 
 /* =====================
-   NAVBAR FINAL (CLEAN)
-===================== */
-
-.navbar {
-  position: fixed;
-  width: 90%;
-  max-width: 1000px;
-  top: 15px;              /* pulls it off the very top */
-  left: 50%;
-  transform: translateX(-50%);  /* centers it */
-
-  background: rgba(0,0,0,0.85);
-  backdrop-filter: blur(6px);
-
-  padding: 10px 16px;     /* thinner */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  border-radius: 12px;    /* gives it that clean contained look */
-  z-index: 1000;
-}
-
-/* MOBILE (SAME LOOK, JUST SMALLER) */
-@media (max-width: 768px) {
-
- /* =====================
-   NAVBAR FINAL (CLEAN)
-===================== */
-
-.navbar {
-  position: fixed;
-  width: 90%;
-  max-width: 1000px;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0,0,0,0.85);
-  backdrop-filter: blur(6px);
-  padding: 10px 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 12px;
-  z-index: 1000;
-}
-
-/* NAV LINKS (ALL SCREENS) */
-.nav-links {
-  display: flex;
-  gap: 22px;
-}
-
-.nav-links a {
-  color: var(--text-muted);
-  text-decoration: none;
-  font-size: 0.9rem;
-  padding: 6px 10px;
-  border-radius: 6px;
-  transition: all 0.25s ease;
-}
-
-.nav-links a:hover {
-  color: var(--accent-gold);
-  background: rgba(214,179,106,0.08);
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-
- /* =====================
-   NAVBAR FINAL (CLEAN)
-===================== */
-
-/* =====================
    NAVBAR (CLEAN FINAL)
 ===================== */
 
@@ -377,7 +302,7 @@ html {
   transform: translateX(-50%);
   background: rgba(0,0,0,0.85);
   backdrop-filter: blur(6px);
-  padding: 12px 20px;
+  padding: 12px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -391,30 +316,39 @@ html {
   font-size: 1rem;
 }
 
-/* KEY FIX: better spacing */
+/* NAV LINKS */
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 28px; /* increased spacing */
+  gap: 28px;
 }
 
-/* KEY FIX: clickable breathing room */
 .nav-links a {
   color: var(--text-muted);
   text-decoration: none;
   font-size: 0.95rem;
-  padding: 8px 12px; /* more internal space */
+  padding: 8px 12px;
   border-radius: 6px;
   transition: all 0.25s ease;
-  white-space: nowrap; /* prevents text wrapping into each other */
+  white-space: nowrap;
 }
 
+/* CLEAN SEPARATION */
+.nav-links a:not(:last-child) {
+  border-right: 1px solid var(--border-soft);
+  padding-right: 16px;
+}
+
+/* HOVER */
 .nav-links a:hover {
   color: var(--accent-gold);
-  background: rgba(214,179,106,0.08);
+  background: rgba(214,179,106,0.12);
 }
 
-/* MOBILE */
+/* =====================
+   MOBILE
+===================== */
+
 @media (max-width: 768px) {
 
   .navbar {
@@ -428,16 +362,15 @@ html {
   }
 
   .nav-links {
-    gap: 16px; /* slightly tighter but still separated */
+    gap: 16px;
   }
 
   .nav-links a {
     font-size: 0.8rem;
     padding: 6px 8px;
   }
-}
 
-.nav-links a:not(:last-child) {
-  border-right: 1px solid var(--border-soft);
-  padding-right: 16px;
+  .nav-links a:not(:last-child) {
+    padding-right: 10px;
+  }
 }
