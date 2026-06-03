@@ -84,31 +84,25 @@ class="hero-banner">
 
 <footer class="site-footer">
 
-<h2>
-
-Support My Writing
-
-</h2>
-
-<p>
-
-Every book, devotional, article, and study shared across these websites is freely available to read. Readers who have been encouraged, blessed, or helped through this work and would like to support future projects may use the options below.
-
-<footer class="site-footer">
-
 <h2>Support My Writing</h2>
 
 <p>
-Every book, devotional, article, and study shared across these websites is freely available to read.
+Every book, devotional, article, and study shared across these websites is freely available to read. Readers who have been encouraged, blessed, or helped through this work and would like to support future projects may use the options below.
 </p>
 
 <div class="footer-buttons">
 
-<a href="https://cash.app/$brad1gabe" target="_blank">
+<a
+href="https://cash.app/$brad1gabe"
+target="_blank"
+rel="noopener noreferrer">
 Cash App
 </a>
 
-<a href="https://paypal.me/brad1god" target="_blank">
+<a
+href="https://paypal.me/brad1god"
+target="_blank"
+rel="noopener noreferrer">
 PayPal
 </a>
 
@@ -116,13 +110,16 @@ PayPal
 
 <div class="footer-copy">
 
-© 2026 Bradley Hobbs
+© <span id="year"></span> Bradley Hobbs
 
 </div>
 
 </footer>
 
 <script src="script.js"></script>
-
+<script>
+document.getElementById("year").textContent =
+new Date().getFullYear();
+</script>
 </body>
 </html>
