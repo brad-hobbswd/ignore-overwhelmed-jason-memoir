@@ -27,33 +27,36 @@ body {
 
 
 /* HERO */
-.hero {
-  min-height: auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  text-align: center;
-  padding: 20px 20px 10px;
+.hero{
+
+max-width:1200px;
+
+margin:40px auto 20px;
+
+padding:0 20px;
+
+text-align:center;
+
 }
 
-.hero h1 {
-  font-size: 3rem;
-  letter-spacing: 2px;
-  text-shadow: 0 0 10px rgba(214,179,106,0.1);
-}
+.hero-banner{
 
-.hero-divider {
-  width: 60px;
-  height: 2px;
-  background: var(--accent-gold);
-  margin: 12px auto 0;
-  opacity: 0;
-  animation: fadeIn 1.5s ease forwards;
-  animation-delay: 0.6s;
-}
+width:100%;
 
-.highlight {
-  color: var(--accent-red);
+display:block;
+
+margin:auto;
+
+border-radius:12px;
+
+box-shadow:
+0 15px 40px rgba(
+0,
+0,
+0,
+.45
+);
+
 }
 
 /* SECTION */
