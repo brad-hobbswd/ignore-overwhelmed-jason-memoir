@@ -437,6 +437,126 @@ html {
   background: rgba(214,179,106,0.12);
 }
 
+.site-footer{
+
+margin-top:100px;
+
+padding:60px 25px;
+
+text-align:center;
+
+border-top:
+1px solid rgba(
+212,
+175,
+55,
+.2
+);
+
+background:
+rgba(
+255,
+255,
+255,
+.02
+);
+
+}
+
+.site-footer h2{
+
+font-size:2rem;
+
+margin-bottom:20px;
+
+color:var(--gold-soft);
+
+}
+
+.site-footer p{
+
+max-width:800px;
+
+margin:0 auto 20px;
+
+line-height:1.8;
+
+color:var(--text-muted);
+
+}
+
+.footer-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin:30px 0;
+
+}
+
+.footer-buttons a{
+
+display:inline-block;
+
+padding:14px 28px;
+
+background:var(--gold);
+
+color:#111;
+
+text-decoration:none;
+
+font-weight:bold;
+
+border-radius:8px;
+
+transition:.3s ease;
+
+}
+
+.footer-buttons a:hover{
+
+background:var(--gold-soft);
+
+transform:translateY(-3px);
+
+}
+
+.footer-copy{
+
+margin-top:30px;
+
+font-size:.9rem;
+
+opacity:.8;
+
+}
+
+@media(max-width:768px){
+
+.footer-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.footer-buttons a{
+
+width:100%;
+
+max-width:300px;
+
+}
+
+}
+
 /* =====================
    MOBILE
 ===================== */
